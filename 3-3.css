@@ -1,0 +1,98 @@
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+}
+
+.jumbotron { 
+	background:url(images/top.png) center no-repeat; 
+	background-size: cover;
+}
+
+strong {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.servis {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.box img {
+	display:block;
+}
+
+.box-text {
+	background: #222328;
+}
+
+.box-text h4 {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 1em;
+}
+
+.box-text h4:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -15px;/*線の上下位置*/
+	display: inline-block;
+	width: 50px;/*線の長さ*/
+	height: 5px;/*線の太さ*/
+	-moz-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);/*位置調整*/
+	background-color: #dfaa0c;/*線の色*/
+}
+
+.ava {
+	width: 25%;
+}
+
+.img-text {
+	display: table;
+}
+
+.img-text p {
+	color: gray;
+}
+
+.img-text h2 {
+	font-size: 70px;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 1em;
+}
+
+.img-text h2:before {
+	content: '';
+	position: absolute;
+	bottom: -15px;/*線の上下位置*/
+	display: inline-block;
+	width: 80px;/*線の長さ*/
+	height: 2px;/*線の太さ*/
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	background-color: #01cd1b;/*線の色*/
+}
+
+
+footer {
+	background: #2185f5;
+}
